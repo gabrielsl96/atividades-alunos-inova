@@ -1,0 +1,20 @@
+index.html<!DOCTYPE html>
+<html lang="br">
+  <head>
+   <h1> Mario Bros Jumpman</h1>
+    <h3>mariobroslovejump@yahoo.com</h3> 
+    <h3>+55 (11) 9999-8888</h3>
+    <h3>Cidade dos Cogumelos - Estado do cogumelo vermelho</h3>
+    <h3>Objetivo Profissional : Derrotar o Bowser</h3>
+    <h3>Formação acadêmica :Não terminou a escola</h3>
+    <h3>Experiência Profissional : Encanador a 40 anos</h3>
+    <h3>Habilidades : Pular e derrotar o mal</h3>
+    <h3>Idiomas : Italiano, Português , Inglês , Espanhol , Japonês , Chinês</h3>
+ <a href="https://www.linkedin.com/company/super-mario" target="_blank" rel="noopener noreferrer">Meu LinkeDin</a>
+    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2hkE-qbIzHR6FUJTo2W4vpPIRHGOoi0uFWlcbw6jeQLV78ohwBl46cs0&s=10" alt="">
+    <title>Curriculo</title>
+  </head>
+  <body>
+  </body>
+</html>
