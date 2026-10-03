@@ -1,0 +1,12 @@
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    margin-top: 0 20% 0 20%;
+    allign -items: center;
+    }
+
+.button button {
+    border: none;
+    background-color: #231ff0;
+    
+}
