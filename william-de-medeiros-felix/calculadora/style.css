@@ -1,0 +1,17 @@
+button (
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    aligin-items: center;)
+
+    buttons {
+        background-color: #orange
+        border: none;
+
+        
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+
+
+    }
