@@ -4,5 +4,6 @@
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 2000,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "cSpell.language": "en,pt,pt-BR"
+  "cSpell.language": "en,pt,pt-BR",
+  "livePreview.defaultPreviewPath": "/professor-gabriel/calculadora/index.html"
 }
