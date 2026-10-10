@@ -1,13 +1,18 @@
+
+
+
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 25%);
-  margin: 0 45% 0 45%;
+  margin: 0 20% 0 20%;
   align-items: center;
 }
 
 .buttons button {
   border: none;
-  background-color: white;
+  border-radius: 10px;
+  background-color: white
+  height: 55px;
 }
 
 .buttons button:hover {
@@ -16,4 +21,19 @@
 
 .buttons button:active {
   background-color: darkgoldenrod;
+}
+display (
+height: 80px;
+display: flex;
+margin-bottom: 10px;
+)
+
+display textarea {
+    font-size: 30px;
+    text-align: right;
+    resize: none;
+    background-color: black
+    color: gray
+    width: 100%;
+    border-radius: 10px;
 }
