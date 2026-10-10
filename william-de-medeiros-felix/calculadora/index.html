@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <tilte>Calculadora</title>
+    <title>Calculadora</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script> src="script.js"></script>
-<link rel="stylesheet" type="text/css" href="style.css"> 
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
+
 <body>
     <h1>Calculadora</h1>
-<div id = "calculadora">
-    <div id="display"
-<textarea name="display" readonly></textarea>
-</div>
-    <div class="botoes">
-      <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>c</button>
 
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>/</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>*</button>
-        
-    
+    <div class="calculator">
+        <div class="display">
+            <textarea name="display" readonly></textarea>
+        </div>
+
+        <div class="buttons">
+            <button onclick="concatenatedisplay('7')">7</button>
+            <button onclick="concatenatedisplay('8')">8</button>
+            <button onclick="concatenatedisplay('9')">9</button>
+            <button onclick="clearDisplayString()">C</button>
+
+            <button onclick="concatenatedisplay('4')">4</button>
+            <button onclick="concatenatedisplay('5')">5</button>
+            <button onclick="concatenatedisplay('6')">6</button>
+            <button onclick="concatenatedisplay('/')">/</button>
+
+            <button onclick="concatenatedisplay('1')">1</button>
+            <button onclick="concatenatedisplay('2')">2</button>
+            <button onclick="concatenatedisplay('3')">3</button>
+            <button onclick="concatenatedisplay('*')">*</button>
+
+            <button onclick="concatenatedisplay('.')">.</button>
+            <button onclick="concatenatedisplay('0')">0</button>
+            <button onclick="concatenatedisplay('-')">-</button>
+            <button onclick="concatenatedisplay('+')">+</button>
+
+            <button onclick="calculate()">=</button>
+        </div>
     </div>
 
-</div>
+    </div>
 </body>
+
 </html>
