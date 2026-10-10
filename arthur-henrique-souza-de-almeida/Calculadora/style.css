@@ -1,0 +1,20 @@
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0px 20% 0 20% 
+    align-itens: center;
+}
+
+.buttons button{
+    border: none;
+    background-color: lightslategray
+}
+
+.buttons button:hover {
+    background-color: gray;
+}
+
+.buttons button:active {
+    background-color: darkslategray;
+}
+

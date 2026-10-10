@@ -1,0 +1,24 @@
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+margin: 0 25% 0 25%;
+alin-itens: center;
+    }
+
+.buttons button {
+        background-color: violet;
+        
+}
+
+.buttons button:hover {
+        background-color: purple;
+    
+}
+
+.buttons button:active {
+        background-color: blue;
+        
+}
+
+
+

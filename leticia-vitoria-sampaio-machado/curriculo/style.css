@@ -8,7 +8,7 @@ html::before {
   height: fit-content;
   font-family: monospace;
   opacity: 0.6;
-  background: orange;
+  background: rebeccapurple;
   color: white;
   padding: 4px 8px;
   border-radius: 4px;

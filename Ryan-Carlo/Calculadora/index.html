@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+<script src="script.js"></script>
+   <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <h1>Calculadora</h1>
+<div class="calculator"></div>
+<div class="display"></div>  
+<textarea name="display" id="display-textarea" readonly></textarea>
+<div>   
+    <div class="botao">  
+      <button class="botao" onclick="adicionarNumero('7')">7</button>
+      <button class="botao" onclick="adicionarNumero('8')">8</button>
+      <button class="botao" onclick="adicionarNumero('9')">9</          button>
+        <button class="botao" onclick="limparDisplay()">C</button>        
+        <button class="botao" onclick="adicionarNumero('4')">4</button>
+        <button class="botao" onclick="adicionarNumero('5')">5</button>
+        <button class="botao" onclick="adicionarNumero('6')">6</button>
+        <button class="botao" onclick="adicionarOperador('/')">/</button>    
+        <button class="botao" onclick="adicionarNumero('1')">1</button>
+        <button class="botao" onclick="adicionarNumero('2')">2</button>
+        <button class="botao" onclick="adicionarNumero('3')">3</button>
+        <button class="botao" onclick="adicionarOperador('*')">*</button> 
+        <button class="botao" onclick="adicionarOperador('.')">.</button> 
+        <button class="botao" onclick="adicionarNumero('0')">0</button>
+        <button class="botao" onclick="adicionarOperador('-')">-</button>
+        <button class="botao" onclick="adicionarOperador('+')">+</button>
+      <button class="botao" onclick="adicionarOperador('=')">=</button> 
+    </div>
+</div>
+</body>
+</html>
