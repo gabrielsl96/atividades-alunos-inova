@@ -1,0 +1,23 @@
+let display = "";
+
+const displayElement = document.getElementById("display");
+
+function concatenateToDisplay(value) {
+    display += value;
+    displayElement.value = display;
+}
+
+function clearDisplay() {
+    display = "";
+    displayElement.value = display;
+}
+
+function calculate() {
+    try {
+        display = eval(display).toString();
+        displayElement.value = display;
+    } catch (error) {
+        display = "Error";
+        displayElement.value = display;
+    }
+}
