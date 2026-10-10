@@ -1,0 +1,41 @@
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  margin: 0 30% 0 30%;
+  align-items: center;
+  gap: 3px;
+}
+
+.buttons button {
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(165, 31, 31);
+  height: 55px;
+}
+
+.buttons button:hover {
+  background-color: rgb(165, 31, 31);
+}
+
+.buttons button:active {
+  background-color: red;
+}
+
+.display {
+  height: 50px;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.display textarea {
+  font-size: 30px;
+  text-align: right;
+  resize: none;
+  background-color: black;
+  color: red;
+  width: 100%;
+  border-radius: 100px;
+  
+}
+
+
