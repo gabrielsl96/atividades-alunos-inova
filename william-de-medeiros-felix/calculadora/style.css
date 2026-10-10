@@ -1,17 +1,39 @@
-button (
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0 auto;
-    aligin-items: center;)
-
-    buttons {
-        background-color: #orange
-        border: none;
-
-        
-        padding: 10px;
-        font-size: 16px;
-        cursor: pointer;
 
 
-    }
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  margin: 0 20% 0 20%;
+  align-items: center;
+}
+
+.buttons button {
+  border: none;
+  border-radius: 10px;
+  background-color: white
+  height: 55px;
+}
+
+.buttons button:hover {
+  background-color: gold;
+}
+
+.buttons button:active {
+  background-color: darkgoldenrod;
+}
+display (
+height: 80px;
+display: flex;
+margin-bottom: 10px;
+)
+
+display textarea {
+    font-size: 30px;
+    text-align: right;
+    resize: none;
+    background-color: black
+    color: gray
+    width: 100%;
+    border-radius: 10px;
+}
