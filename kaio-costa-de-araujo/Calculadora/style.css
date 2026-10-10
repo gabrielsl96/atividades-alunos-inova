@@ -1,12 +1,43 @@
+*{
+    padding: 020px; 020px;
+}
+
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 25%);
-    margin-top: 0 20% 0 20%;
+    margin-top: 0 30% 0 30%;
     allign -items: center;
-    }
+    gap: 3px;
+}
 
-.button button {
+.buttons button {
     border: none;
+    border-radius: 10px;
     background-color: #231ff0;
-    
+    height: 70px;
+}
+
+.buttons button:hover {
+    background-color: #080641;
+}
+
+buttons button:active {
+    background-color: #010108;
+}
+
+.display {
+    height: 50px;
+    display: flex;
+    margin-bottom: 5px;
+    font-size: 50px;
+}
+
+display textarea {
+    text-align: right;
+    font-size: 30px;
+    resize: none;
+    background-color: #000000fd;
+    color: #ffffff;
+    width: 100%;
+    border-radius: 10px;
 }
