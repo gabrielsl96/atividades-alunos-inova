@@ -1,4 +1,4 @@
-Let displaytext ="";
+let displaytext ="";
 
 function concatenatedisplay(value){
     displaytext += value;
