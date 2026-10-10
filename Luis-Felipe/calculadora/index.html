@@ -4,39 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
-    <h1>Calculadora</h1>
+
     <div class="calculator">
         <div class="display">
             <textarea name="display" aria-readonly="true" readonly></textarea>
-
         </div>
-        <div class="botao">
-            <button class="botao" id="botao-1">1</button>
-            <button class="botao" id="botao-2">2</button>
-            <button class="botao" id="botao-3">3</button>
-            <button class="funcionalidade" id="funcionalidade-limpar">C</button>
-            <button class="botao" id="botao-4">4</button>
-            <button class="botao" id="botao-5">5</button>
-            <button class="botao" id="botao-6">6</button>
-            <button class="operador" id="operador-divisao">/</button>
-            <button class="botao" id="botao-7">7</button>
-            <button class="botao" id="botao-8">8</button>
-            <button class="botao" id="botao-9">9</button>
-            <button class="operador" id="operador-multiplicacao">*</button>
-            <button class="botao" id="botao-0">0</button>
-            <button class="operador" id="operador-soma">+</button>
-            <button class="operador" id="operador-subtracao">-</button>
-            <button class="funcionalidade" id="funcionalidade-calcular">=</button>
-        </div>
-            
+        <div class="botao-container">
+            <button class="num" id="botao-1" onclick="concatenateDisplay('1')">1</button>
+            <button class="num" id="botao-2" onclick="concatenateDisplay('2')">2</button>
+            <button class="num" id="botao-3" onclick="concatenateDisplay('3')">3</button>
+            <button class="funcionalidade" id="funcionalidade-limpar" onclick="clearDisplay()">C</button>
 
-       
-    
+            <button class="num" id="botao-4" onclick="concatenateDisplay('4')">4</button>
+            <button class="num" id="botao-5" onclick="concatenateDisplay('5')">5</button>
+            <button class="num" id="botao-6" onclick="concatenateDisplay('6')">6</button>
+            <button class="operador" id="operador-divisao" onclick="concatenateDisplay('/')">÷</button>
+
+            <button class="num" id="botao-7" onclick="concatenateDisplay('7')">7</button>
+            <button class="num" id="botao-8" onclick="concatenateDisplay('8')">8</button>
+            <button class="num" id="botao-9" onclick="concatenateDisplay('9')">9</button>
+            <button class="operador" id="operador-multiplicacao" onclick="concatenateDisplay('*')">x</button>
+
+            <button class="num" id="botao-0" onclick="concatenateDisplay('0')">0</button>
+            <button class="operador" id="operador-soma" onclick="concatenateDisplay('+')">+</button>
+            <button class="operador" id="operador-subtracao" onclick="concatenateDisplay('-')">-</button>
+            <button class="funcionalidade acao" id="funcionalidade-calcular" onclick="calculate()">=</button>
+        </div>
+    </div>
+
 </body>
 </html>

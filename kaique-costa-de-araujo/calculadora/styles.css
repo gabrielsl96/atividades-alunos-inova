@@ -1,41 +1,30 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0 10px;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 25%);
+  margin: 0 30% 0 30%;
   align-items: center;
   gap: 3px;
-  margin-bottom: 10px;
 }
 
 .buttons button {
   border: none;
   border-radius: 10px;
-  background-color: pink;
+  background-color: rgb(165, 31, 31);
   height: 55px;
 }
 
 .buttons button:hover {
-  background-color: darkred;
+  background-color: rgb(165, 31, 31);
 }
 
 .buttons button:active {
-  background-color: gray;
+  background-color: red;
 }
 
 .display {
   height: 50px;
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .display textarea {
@@ -45,5 +34,8 @@ h1 {
   background-color: black;
   color: red;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 100px;
+  
 }
+
+

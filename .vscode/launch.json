@@ -5,6 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "C#: <project-name> Debug",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/<relative-path-to-project-folder><project-name>.csproj"
+        },
+        {
             "name": "(gdb) Attach",
             "type": "cppdbg",
             "request": "attach",
@@ -36,13 +42,18 @@
             "request": "launch",
             "sessionName": "PowerShell Core (x64)"
         },
-        
         {
             "name": "PowerShell: Launch Current File",
             "type": "PowerShell",
             "request": "launch",
             "script": "${file}",
             "args": []
+        },
+        {
+            "type": "msedge",
+            "name": "http://127.0.0.1:3000/william-de-medeiros-felix/calculadora/index.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/william-de-medeiros-felix/calculadora/index.html"
         }
     ]
 }

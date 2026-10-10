@@ -1,13 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 25%);
-  margin: 0 20% 0 20%;
   align-items: center;
+  gap: 3px;
+  margin-bottom: 10px;
 }
 
 .buttons button {
   border: none;
+  border-radius: 10px;
   background-color: orange;
+  height: 40px;
 }
 
 .buttons button:hover {
@@ -15,5 +29,30 @@
 }
 
 .buttons button:active {
-  background-color: red;
+  background-color: gray;
+}
+
+.display {
+  height: 50px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.display textarea {
+  font-size: 30px;
+  text-align: right;
+  resize: none;
+  background-color: black;
+  color: orange;
+  width: 100%;
+  border-radius: 10px;
+}
+
+#calculator {
+  margin-top: 10px;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 1px orange;
+  width: 100%;
 }
