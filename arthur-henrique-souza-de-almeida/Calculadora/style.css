@@ -1,13 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 10 0 10;
+}
+
+
+
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 0px 20% 0 20% 
-    align-itens: center;
-}
+    align-items: center;
+    gap: 1px;
+} 
 
 .buttons button{
     border: none;
-    background-color: lightslategray
+    background-color: lightslategray;
+    height: 55px;
 }
 
 .buttons button:hover {
@@ -18,3 +27,18 @@
     background-color: darkslategray;
 }
 
+display{
+    height: 50px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+display textarea{
+    font-size: 10px;
+    text-align: right;
+    resize: none;
+    background-color: black;
+    color: white;
+    width: 100%;
+    border-radius: 10px;
+}

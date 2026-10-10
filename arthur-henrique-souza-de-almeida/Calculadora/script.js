@@ -1,25 +1,30 @@
-function somar(numeroA, numeroB){
-  const result = Number(numeroA) + Number(numeroB);
+let display = "";
 
-  alert(`O resultado é:  ${result}`);
+function concatenateDisplay(value) {
+  display += value; 
 }
 
-function subtrair(numeroA, numeroB){
-  const result = Number(numeroA) - Number(numeroB);
-
-  alert(`O resultado é:  ${result}`);
+function cleardisplay() {
+  display = "";
+  document.getElementById("display").value = display
 }
 
-function multiplicar(numeroA, numeroB){
-  const result = Number(numeroA) * Number(numeroB);
+function calculate() {
+ try {
+  let result = eval(display);
+  document.getElementById("display").value = result;
+  display = result.toString();
+ }
+catch (error) {
+  document.getElementById("display").value = "Error";
+  display = "";
+};
 
-  alert(`O resultado é:  ${result}`);
 }
 
-function dividir(numeroA, numeroB){
-  const result = Number(numeroA) / Number(numeroB);
 
-  alert(`O resultado é:  ${result}`);
-}
+
+
+
 
 
