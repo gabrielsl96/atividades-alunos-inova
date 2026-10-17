@@ -1,21 +1,22 @@
-let displayString ="";
-    function concatenateDisplay(value) {
-        displayString += value;
-    }
+let displayText = "";
+
+const displayElement = document.getElementById("display");
+
+function concatenateDisplay(value) {
+  displayText += value;
+  displayElement.value = displayText;
+}
 
 function clearDisplay() {
-    displayString = "";
-    document.getElementById("display").value = displayString;
+  displayText = "";
+  displayElement.value = displayText;
 }
 
 function calculate() {
-    try {
-        let result = eval(displayString);
-        document.getElementById("display").value = result;
-        displayString = result.toString();
-    }
-    catch (error) {
-        document.getElementById("display").value = "Error";
-        displayString = "";
-    }
+  try {
+    displayText = eval(displayText).toString();
+  } catch (error) {
+    displayText = "Error";
+  }
+  displayElement.value = displayText;
 }
