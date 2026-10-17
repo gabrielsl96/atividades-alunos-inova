@@ -46,12 +46,12 @@ transition: transform 0.2s;
 button:hover {
     transform: scale(1.1);
 #rock  {
-background-color: gray;
+background-color: gray  !important;
 }
 #paper{
- background-color: rgb(248, 6, 6);
+ background-color: rgb(248, 6, 6)  !important;
 }
 #scissors{
 
-    background-color: black;
+    background-color: black !important;
 }
