@@ -29,7 +29,7 @@ color: #555;
 display: flex;
 gap: 20px;
 justify-content: center;
-margin-bottom: 30px;
+margin-bottom: 20px;
 
 
 
@@ -38,7 +38,7 @@ width: 100px;
 height: 100px;
 font-size: 45px;
 cursor: pointer;
-border: 2px solid #333;
+border: 2px solid #ec8004;
 border-radius: 15px;
 transition: transform 0.2s;
 
