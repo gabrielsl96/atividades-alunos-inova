@@ -1,30 +1,24 @@
-let display = "";
+let displayText = "";
+
+const displayElement = document.getElementById("display");
 
 function concatenateDisplay(value) {
-  display += value; 
+  displayText += value;
+  displayElement.value = displayText;
 }
 
-function cleardisplay() {
-  display = "";
-  document.getElementById("display").value = display
+function clearDisplay() {
+  displayText = "";
+  displayElement.value = displayText;
 }
 
 function calculate() {
- try {
-  let result = eval(display);
-  document.getElementById("display").value = result;
-  display = result.toString();
- }
-catch (error) {
-  document.getElementById("display").value = "Error";
-  display = "";
-};
-
+  try {
+    displayText = eval(displayText).toString();
+  } catch (error) {
+    displayText = "Error";
+  }
+  displayElement.value = displayText;
 }
-
-
-
-
-
 
 
