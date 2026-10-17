@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 10px;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+
+}
+
+#rock{
+    background-color: rgba(105, 66, 6, 0.89)
+}
+
+#paper{
+    background-color: rgba(4, 223, 34, 0.89)
+}
+
+#scissors{
+    background-color: rgba(171, 232, 250, 0.932)
+}
