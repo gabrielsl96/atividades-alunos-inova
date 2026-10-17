@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jokenpo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- CAIXA PRINCIPAL DO JOGO -->
+    <div class="game-container">
+        <h3>JOKENPO</h3>
+        <h4>Choose an option:</h4>
+
+        <div class="display">
+            <textarea id="display-text" name="display" aria-readonly="true" readonly>Aguardando jogada...</textarea>
+        </div>
+
+        <div class="score-board">
+            <p id="player-score">Player Score: 0</p>
+            <p id="computer-score">Computer Score: 0</p>
+        </div>
+
+        <div class="options">
+            <button id="rock" class="option">&#x270A;&#x1F3FC;</button>
+            <button id="paper" class="option">&#x270B;&#x1F3FC;</button>
+            <button id="scissors" class="option">&#x270C;&#x1F3FC;</button>
+        </div>
+    </div>
+
+</body>
+</html>

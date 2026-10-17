@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-    
+    <h1>Pedra, Papel e Tesoura</h1>
+    <h3>Escolha uma opção:</h3>
+
+    <div id="options">
+        <button id="rock" data-choice="pedra">&#x1FAA8;</button>
+        <button id="paper" data-choice="papel">&#x1F4C4;</button>
+        <button id="scissors" data-choice="tesoura">&#x2702;</button>
+    </div>
+
+    <button id="reset">Reiniciar</button>
+
+    <p id="result">0</p>
+    <p id="score">0</p>
 </body>
 </html>
