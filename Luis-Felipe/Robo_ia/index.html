@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Robot Face</title>
+ 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="robot" id="robot" data-mood="neutral">
+    <div class="face" id="face">
+        <div class="eyes">
+          <div class="eye l"></div>
+          <div class="eye r"></div>
+        </div>
+        <div class="cheek l"></div><div class="cheek r"></div>
+        <div class="mouth"></div>
+        <div class="hi">Hi!</div>
+        <div class="hand">
+          <svg viewBox="0 0 100 120" aria-hidden="true">
+            <defs>
+              <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ffdcc2"/><stop offset="1" stop-color="#f0a283"/>
+              </linearGradient>
+              <linearGradient id="sleeve" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#4a93ff"/><stop offset="1" stop-color="#1c48cf"/>
+              </linearGradient>
+            </defs>
+            <g class="arcs" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round">
+              <path d="M13 40 Q4 53 10 68"/><path d="M22 44 Q15 54 19 63"/>
+              <path d="M87 24 Q97 38 91 52"/><path d="M78 29 Q85 38 82 47"/>
+            </g>
+            <rect x="26" y="84" width="48" height="40" rx="10" fill="url(#sleeve)"/>
+            <rect x="27" y="76" width="46" height="13" rx="6.5" fill="#fff"/>
+            <rect x="14" y="52" width="28" height="11" rx="5.5" fill="url(#skin)" transform="rotate(-38 38 60)"/>
+            <rect x="28" y="44" width="44" height="40" rx="16" fill="url(#skin)"/>
+            <rect x="30" y="14" width="9" height="44" rx="4.5" fill="url(#skin)"/>
+            <rect x="41" y="8"  width="9" height="50" rx="4.5" fill="url(#skin)"/>
+            <rect x="52" y="12" width="9" height="46" rx="4.5" fill="url(#skin)"/>
+            <rect x="63" y="22" width="8" height="38" rx="4"   fill="url(#skin)"/>
+            <ellipse cx="45" cy="64" rx="9" ry="6" fill="#fff" opacity=".18"/>
+          </svg>
+        </div>
+        <div class="tear"></div>
+        <div class="zzz">Z z</div>
+        <span class="heart" style="left:30%">♥</span>
+        <span class="heart" style="left:48%; animation-delay:.8s">♥</span>
+        <span class="heart" style="left:66%; animation-delay:1.6s">♥</span>
+    </div>
+  </div>
+ 
+  <div class="ui">
+    <div class="row" id="moodButtons">
+      <button data-mood="neutral">Neutral</button>
+      <button data-mood="happy">Happy</button>
+      <button data-mood="sad">Sad</button>
+      <button data-mood="angry">Angry</button>
+      <button data-mood="surprised">Surprised</button>
+      <button data-mood="sleepy">Sleepy</button>
+      <button data-mood="love">Love</button>
+    </div>
+    <div class="row">
+      <button id="btnLeft" aria-label="Look left">◀ Left</button>
+      <button id="btnCenter" aria-label="Look center">Center</button>
+      <button id="btnRight" aria-label="Look right">Right ▶</button>
+      <button id="btnBlink">Blink</button>
+      <button id="btnWink">Wink</button>
+      <button id="btnWave">Wave</button>
+      <button id="btnTalk">Talk</button>
+      <button id="btnDance">Dance</button>
+      <button id="btnAuto">Auto blink: on</button>
+    </div>
+    <div class="status" id="status"></div>
+  </div>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
+ 
