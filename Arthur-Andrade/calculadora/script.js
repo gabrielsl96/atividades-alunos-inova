@@ -1,16 +1,22 @@
-let displaytext ="";
+let displayText = "";
 
+const displayElement = document.getElementById("display");
 
-function concatenatedisplay(value){
-    displaytext += value;
+function concatenateDisplay(value) {
+  displayText += value;
+  displayElement.value = displayText;
 }
-function clearDisplayString(){
-    displaytext = "";
+
+function clearDisplay() {
+  displayText = "";
+  displayElement.value = displayText;
 }
-function calculateDisplay(){
-    try{
-        display = eval(displaytext);
-    } catch (error) {
-        display = "Error";
-    }
+
+function calculate() {
+  try {
+    displayText = eval(displayText).toString();
+  } catch (error) {
+    displayText = "Error";
+  }
+  displayElement.value = displayText;
 }
