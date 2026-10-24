@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Cat",
+            "request": "launch",
+            "mainClass": "Cat",
+            "projectName": "atividades-alunos-inova_94fd78c5"
+        },
+        {
             "name": "C#: <project-name> Debug",
             "type": "dotnet",
             "request": "launch",
