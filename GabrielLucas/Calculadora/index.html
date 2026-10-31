@@ -1,52 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <title>Calculadora</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
-    <div>
-        <h1>Calculadora</h1>
-
-        <div id="calculadora">
-
-            <div id="display">
-                <textarea name="display" readonly></textarea>
+        <div id="calculator">
+            <div class="display">
+                <textarea name="display" id="display" readonly></textarea>
             </div>
 
-            <div class="buttons">
-                <button id="clear">C</button>
-                <button id="backspace">←</button>
-                <button id="divide">/</button>
-                <button id="multiply">*</button>
+        <div class="buttons">
+            <button onClick="concatenateDisplay('7')">7</button>
+            <button onClick="concatenateDisplay('8')">8</button>
+            <button onClick="concatenateDisplay('9')">9</button>
+            <button onClick="clearDisplay()">C</button>
 
-                <button id="seven">7</button>
-                <button id="eight">8</button>
-                <button id="nine">9</button>
-                <button id="subtract">-</button>
+            <button onClick="concatenateDisplay('4')">4</button>
+            <button onClick="concatenateDisplay('5')">5</button>
+            <button onClick="concatenateDisplay('6')">6</button>
+            <button onClick="concatenateDisplay('/')">/</button>
 
-                <button id="four">4</button>
-                <button id="five">5</button>
-                <button id="six">6</button>
-                <button id="add">+</button>
+            <button onClick="concatenateDisplay('1')">1</button>
+            <button onClick="concatenateDisplay('2')">2</button>
+            <button onClick="concatenateDisplay('3')">3</button>
+            <button onClick="concatenateDisplay('*')">*</button>
 
-                <button id="one">1</button>
-                <button id="two">2</button>
-                <button id="three">3</button>
-                <button id="equals">=</button>
+            <button onClick="concatenateDisplay('.')">.</button>
+            <button onClick="concatenateDisplay('0')">0</button>
+            <button onClick="concatenateDisplay('-')">-</button>
+            <button onClick="concatenateDisplay('+')">+</button>
 
-                <button id="zero">0</button>
-                <button id="decimal">.</button>
-            </div>
-
+            <button onClick="calculate()">=</button>
         </div>
     </div>
+
+    </div>
 </body>
+
 </html>
-
-
